@@ -1,0 +1,28 @@
+[project]
+name = "smart-schedule"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "AndreRafael732",email = "andre.souza@turn2c.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13,<4.0"
+dependencies = [
+    "requests (>=2.32.5,<3.0.0)",
+    "fastapi[standard] (>=0.118.0,<0.119.0)",
+    "google-genai (>=1.41.0,<2.0.0)",
+    "python-dotenv (>=1.1.1,<2.0.0)",
+    "langchain[google-genai] (>=0.3.27,<0.4.0)",
+    "google-api-python-client (>=2.184.0,<3.0.0)",
+    "google-auth-httplib2 (>=0.2.0,<0.3.0)",
+    "google-auth-oauthlib (>=1.2.2,<2.0.0)",
+    "uvicorn (>=0.37.0,<0.38.0)"
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.14.0"
+
